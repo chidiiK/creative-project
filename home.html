@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css" />
+  <title>Creative</title>
+</head>
+
+
+
+<body>
+
+  <!-- NAV SECTION -->
+
+
+  <header class="home">
+    <nav class="nav-bar container-pd">
+      <div class="creative">
+        <li><a href="home.html">AmeNami</a></li>
+      </div>
+
+
+      <div class="menu">
+        <i class='bx bx-menu' onclick="togglemenu"></i>
+
+        <ul class="dropdown">
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/detail.html">Detail</a></li>
+        </ul>
+
+      </div>
+
+      <ul class="nav-links" id="menuList">
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/work.html">Work</a></li>
+        <li><a href="/detail.html">Detail</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <main class="container">
+    <section class="section-1">
+      <div class="home-details container-pd">
+        <div class="home-text">
+          <h3>Hi, I am John, <br />Creative Technologist</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam
+            ut totam sapiente quas voluptatibus molestiae nemo, veritatis debitis
+            voluptatem?
+          </p>
+          <div class="btn">
+            <button class="download">Download Resume</button>
+          </div>
+        </div>
+
+        <div class="home-image container-pd">
+          <img src="img/john.png" alt="john" class="john" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- POST SECTION -->
+
+    <section class="section-2 container-pd">
+      <div class="bigbx">
+        <div class="box-content">
+          <span class="line">Recent Posts</span>
+
+          <div class="post container-pd">
+            <h3>Making a design system from scratch</h3>
+            <span>12 Feb 2020 &nbsp; | &nbsp; Design, Pattern</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              accusantium corrupti ullam, ea sed quo? Aut, porro! Aut?
+            </p>
+          </div>
+        </div>
+
+        <div class="box-content-2">
+          <span class="view"><a href="#">View all</a></span>
+          <div class="post container-pd">
+            <h3>Creating pixel perfect icons in Figma</h3>
+            <span>12 Feb 2020 &nbsp; | &nbsp; Figma, Icon Design</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              accusantium corrupti ullam, ea sed quo? Aut, porro! Aut?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE SECTION -->
+
+    <section class="section-3 container-pd">
+      <!-- <div class="container"> -->
+      <h4 class="works">Featured Works</h4>
+
+      <div class="dashboard">
+        <div class="dashboard-img">
+          <img src="img/dashboard.png" alt="dashboards" class="dashboard-photo" />
+        </div>
+
+        <div class="dashboard-txt">
+          <h3>Designing Dashboards</h3>
+          <div class="dashboard-des">
+            <span>2020</span>
+            <span>Dashboard</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Laudantium
+            iste velit voluptates fuga similique distinctio explicabo. <br> Enim,
+            facere!
+          </p>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <div class="portrait-img">
+          <img src="img/portrait.png" alt="portrait" />
+        </div>
+
+        <div class="portrait-txt">
+          <h3>Vibrant Portraits of 2020</h3>
+          <div class="description">
+            <span>2018</span>
+            <span>Illustration</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Laudantium
+            iste velit voluptates fuga similique distinctio explicabo. <br> Enim,
+            facere!
+          </p>
+        </div>
+      </div>
+
+
+      <div class="art">
+        <div class="art-img">
+          <img src="img/art.png" alt="art" />
+        </div>
+
+        <div class="art-txt">
+          <h3>36 Days of Malayalam type</h3>
+          <div class="art-des">
+            <span>2018</span>
+            <span>Typography</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Laudantium
+            iste velit voluptates fuga similique distinctio explicabo. <br> Enim,
+            facere!
+          </p>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="icons">
+      <i class='bx bxl-facebook-square'></i>
+      <i class='bx bxl-twitter'></i>
+      <i class='bx bxl-instagram'></i>
+      <i class='bx bxl-linkedin'></i>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright &copy 2020 All rights reserved</p>
+    </div>
+
+  </footer>
+  </div>
+  </div>
+
+  </div>
+  <script>
+
+    var menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu() {
+
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "130px";
+      }
+
+      else {
+        menuList.style.maxHeight = "0px";
+
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
